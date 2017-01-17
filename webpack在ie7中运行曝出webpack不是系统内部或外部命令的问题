@@ -1,0 +1,3 @@
+问题的原因是在win7中本地webpack无法关联上全局webpack，需要设置系统环境变量。控制面板->系统和安全->系统->高级系统设置->环境变量：
+1、在系统变量下找到path,点击编辑，在末尾输入‘,’将webpack安装目录下的webpack.cmd文件的路径添加在后面，确定。（如：;C:\Users\Administrator\node_modules\.bin）
+2、依然是在系统变量下点击新建，变量名为：NODE_PATH，变量值为node的安装目录，确定。（如：D:\Program Files\nodejs\node_modules）
